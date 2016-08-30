@@ -1,0 +1,84 @@
+body {
+  background: url(../images/flight.jpeg) no-repeat;
+  background-color: black;
+  background-size:cover;
+  color: white;
+}
+
+header {
+  text-align: right;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+header > * {
+  display: inline;
+}
+
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+
+
+div > p {
+  margin: 0 0 10px;
+}
+
+.search {
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+}
+
+#searchBoxWrapper {
+  margin-bottom: 100px;
+  background-color: rgba(68, 68, 68, 0.6);
+  padding: 35px 40px;
+  border-radius: 5px;
+  width: 40%;
+}
+
+#miniWrapper {
+  position: relative;
+  width: 85%;
+  margin: auto;
+}
+
+#miniWrapper > h3 {
+  margin: 0
+}
+
+#submit {
+  background-color: rgba(225, 225, 225, 0.6);
+  border: .5px solid lightgray;
+  width: 100%
+}
+
+#submitBtn {
+  text-align: center;
+}
+
+.btn_margin {
+  margin-bottom: 150px
+}
+
+.btn_submit {
+  padding: 15px 0 15px 0;
+}
+
+
+footer>a{
+  color: white;
+}
+
+footer {
+  font-size: 12px;
+  margin-right: 31.828px;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+
+}
