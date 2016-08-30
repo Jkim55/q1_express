@@ -98,7 +98,7 @@ function extractTime(){
 // HELPER FUNCTION to extractTime()
 function getTZData(){
   let timeStampUTC = Date.now()/1000
-  let googTZapiURL = "https://maps.googleapis.com/maps/api/timezone/json?location=" + countryLat + "," + countryLong + "&timestamp=" + timeStampUTC + "&key=" + googKey
+  let googTZapiURL = "https://maps.googleapis.com/maps/api/timezone/json?location=" + countryLat + "," + countryLong + "&timestamp=" + timeStampUTC + "&key=" + process.env.googKey
   return $.get(googTZapiURL)
 }
 
