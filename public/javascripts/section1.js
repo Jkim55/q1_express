@@ -13,12 +13,8 @@ function buildSection1() {
   extractTime()
   extractLanguage()
 }
-
 function extractName(){
-  let shortName = parsedData.names.name
-  let fullName = parsedData.names.full
-  $("#shortName").append(shortName);
-  $("#fullName").append(fullName);
+   $("#fullName").append(fullName);
 }
 
 function extractCapital(){

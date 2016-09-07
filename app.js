@@ -3,6 +3,9 @@
 require('dotenv').config()
 // const port = process.env.PORT || 3000  //does this belong here?
 
+var hbs = require('hbs');
+
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -14,6 +17,9 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+hbs.localsAsTemplateData(app);
+app.locals.herokugoogKey = process.env.googKey;
+
 // view engine setupn
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
